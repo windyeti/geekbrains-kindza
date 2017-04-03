@@ -1,0 +1,33 @@
+.header {
+	height: 600px;
+	background: url(../images/headerlong.jpg) no-repeat 50% 0;
+	background-attachment: fixed;
+	.menu {
+		background-image: none;
+		background-color: rgba(255,255,255,0.5);
+		border: none;
+		border-radius: 0;
+			.navbar-brand {
+				background: url(../images/logo.png) no-repeat;
+				width: 140px;
+			}
+	}
+	.news {
+		position: relative;
+		top: 40px;
+		left: 80px;
+		font-size: 20px;
+		.news__link {
+			text-decoration: none;
+			&:hover {
+				color: white;
+			}
+		}
+	}
+	@media all and (max-width: 992px) { 
+		background-position-x: 61%;
+		}
+}
+.navbar-default .navbar-nav .link {
+	// color: white;
+}

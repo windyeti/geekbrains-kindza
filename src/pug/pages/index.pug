@@ -1,0 +1,117 @@
+extends ../layout
+
+block title
+	title Первая страница
+
+
+block menu
+	nav.navbar.navbar-default.navbar-fixed-top.menu
+		.container-fluid
+			.navbar-header
+				button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+					span.sr-only Toggle navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand(href='#')
+			#navbar.navbar-collapse.collapse
+				form.navbar-form.navbar-right(role='search')
+					.form-group
+						input.form-control(type='text', placeholder='Искать Кеце')
+					button.btn.btn-default(type='submit') Ку!
+				ul.nav.navbar-nav.navbar-right
+					li.active
+						a.link(href='#') Плюк
+					li
+						a.link(href='#') Уэф
+					li
+						a.link(href='#') Би
+					li
+						a.link(href='#') дядя Вова
+					li
+						a.link(href='#') Гедеван
+					li.dropdown
+						a.dropdown-toggle.link(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+							| Четлане
+							span.caret
+						ul.dropdown-menu(role='menu')
+							li
+								a(href='#') Контрабандисты
+							li
+								a(href='#') Господин ПЖ
+							li
+								a(href='#') Мама ПЖ
+							li
+								a(href='#') Эцелоп
+							li.divider
+							li.dropdown-header Предметы обихода
+							li
+								a(href='#') Визар
+							li
+								a(href='#') Тринклюкатор
+
+
+	.container-fluid
+		.news
+			img.news__img(src='images/news.svg')
+			.news__text
+				a.news__link(href='#') Что нового на Плюке?
+			.news__text
+				a.news__link(href='#') Почем луц на Плюке?
+
+block bredcrumbs
+
+
+block middle
+	.middle
+		.container-fluid
+			.row
+				.things(class='col-sm-6 col-md-3')
+					.things__container
+						img.things__img(src='images/things01.svg')
+					.things__text Кеце lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repellat hic doloremque, id, debitis iusto repudiandae ullam atque accusamus autem, ratione assumenda eum soluta, consequuntur reiciendis 
+				.things(class='col-sm-6 col-md-3')
+					.things__container
+						img.things__img(src='images/things02.svg')
+					.things__text Гравицаппа lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem repellat hic doloremque, id, debitis iusto repudiandae ullam atque accusamus autem, ratione assumenda eum soluta, consequuntur reiciendis ut non dignissimos perspiciatis nulla fugit! Eligendi iusto tempore tempora veritatis, autem, totam expedita ad deserunt vel impedit quasi incidunt obcaecati minima. Nulla, atque!
+				.things(class='col-sm-6 col-md-3')
+					.things__container
+						img.things__img(src='images/things03.svg')
+					.things__text Визатор ipsum dolor sit amet, consectetur adipisicing elit. Quidem repellat hic doloremque, id, debitis iusto repudiandae 
+				.things(class='col-sm-6 col-md-3')
+					.things__container
+						img.things__img(src='images/things04.svg')
+					.things__text Колокольчик ipsum dolor sit amet, consectetur adipisicing elit. Quidem repellat hic doloremque, id, debitis iusto repudiandae ullam atque accusamus autem, ratione assumenda eum soluta, consequuntur reiciendis ut non dignissimos perspiciatis nulla fugit! Eligendi iusto tempore tempora veritatis
+			.row
+				.col-xs-6.col-md-2
+					a.thumbnail(href='#')
+						img(src='/images/thumbnail01.jpg' alt="...")
+				.col-xs-6.col-md-2
+					a.thumbnail(href='#')
+						img(src='/images/thumbnail02.jpg' alt="...")
+				.col-xs-6.col-md-2
+					a.thumbnail(href='#')
+						img(src='/images/thumbnail03.jpg' alt="...")
+				.col-xs-6.col-md-2
+					a.thumbnail(href='#')
+						img(src='/images/thumbnail04.jpg' alt="...")
+				.col-xs-6.col-md-2
+					a.thumbnail(href='#')
+						img(src='/images/thumbnail05.jpg' alt="...")
+				.col-xs-6.col-md-2
+					a.thumbnail(href='#')
+						img(src='/images/thumbnail06.jpg' alt="...")
+			.row
+				.col-lg-8.col-lg-offset-2.col-sm-12.persona
+					.persona__img__container
+						img.persona__img(src='images/persona01.jpg')
+					.persona__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque vel sequi blanditiis aliquam enim, nisi possimus dolorem ad sed sit aperiam ab, doloribus amet id odit quam itaque! Enim at commodi voluptate, pariatur alias totam illum impedit quasi quas quam rerum, perferendis accusamus ex, voluptatum odit aliquid fugit tempora accusantium ipsam mollitia sit! Odit aperiam a laudantium commodi deleniti unde, et sint veritatis non, iste laborum! Fugiat nemo amet reprehenderit debitis veritatis animi. Fugit ea similique sapiente provident vitae ut, incidunt unde! Illum quidem pariatur dignissimos dolores cumque nobis nulla, aspernatur enim rerum distinctio libero consectetur vitae fugit praesentium accusantium.
+				.col-lg-8.col-lg-offset-2.col-sm-12.persona
+					.persona__img__container
+						img.persona__img(src='images/persona02.jpg')
+					.persona__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque vel sequi blanditiis aliquam enim, nisi possimus dolorem ad sed sit aperiam ab, doloribus amet id odit quam itaque!
+				.col-lg-8.col-lg-offset-2.col-sm-12.persona
+					.persona__img__container
+						img.persona__img(src='images/persona03.jpg')
+					.persona__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione aliquid quod in, laboriosam rem. Dignissimos mollitia, neque repellendus perferendis ipsum aspernatur recusandae laboriosam rem iusto eum, adipisci similique esse, id voluptate pariatur vitae numquam sint ipsa veniam iste autem. Corporis voluptate modi facere placeat impedit eos consequatur ea optio facilis repudiandae cum, est quas quisquam blanditiis quae sit dolorem. Accusamus nisi perferendis, deserunt cumque earum aperiam, quia atque maiores voluptatibus, sed, dolorem? Quidem repudiandae, iure.
+
